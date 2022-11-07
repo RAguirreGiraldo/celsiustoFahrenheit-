@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Roberto Aguirre"/>
+        <meta name="description" content="Convert Fah to Cent in JavaScript"/>
+        <meta name="keywords" content="HTML, CSS, SEO, web, web development"/>
+        <link rel="shortcut icon" href="assets/img/webicon.png" type="image/x-icon"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" href="assets/style/index.css" media="all"/>
+        <script src="assets/script/index.js" defer></script>
+        <title>Convert Farenheit to Centigraate</title>
+    </head>
+    <body class="dark">
+        <header class="hero">
+            <nav class="nav container">
+                <div class="nav_logo">
+                     <h2 class="nav_title">CONVERTER</h2>
+                </div>
+                <ul class="nav_link nav_link--menu">
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">To mts</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">To byte</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">to litre</a>
+                    </li>              
+                </ul>
+            </nav>
+        </header>  
+        <main>
+            <div class="container">
+                <div class="calculator">
+                    <h2>Temperature Convert</h2>                  
+                    <form name="calc">
+                        <input type="number" name="one" class="number-one" placeholder="Enter the temperature"/>                                             
+                        <div class="radio-group"> 
+                            <label class="radio">
+                                <input type="radio" id="optFahrenheit" name="convert" value="fahrenheit">To fahrenheit<span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" id="optCelcius" name="convert" value="celcius" >To Celsius<span></span>
+                            </label>
+                        </div>                  
+                    </form>
+                    <div class="flexbox">
+                        <input type="button" class="get-result" value="Convert"/> 
+                    </div>
+                    <section class="output">
+                        <p></p>
+                    </section>
+                </div>                
+            </div>
+        </main>
+        <button class="show-modal">Light mode</button>
+    </body>
+</html>
